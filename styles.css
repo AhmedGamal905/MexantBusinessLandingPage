@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+}
+
+.nav-section {
+    display: flex;
+    background-color: #dadada;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+}
+
+.nav-tags {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-tags a {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    transition: color 0.5s;
+}
+
+.nav-tags a:hover {
+    color: orange;
+}
+
+.first-section {
+    background-image: url('assets/images/office.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-wrapper h1 {
+    color: orange;
+    font-size: 10vb;
+}
+
+.discover-button,
+.contact-button {
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+
+.contact-button {
+    background-color: orangered;
+}
+
+.service-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: #dadada;
+
+}
+
+.text-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    margin: 50px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+.text-container h1 {
+    padding: 10px;
+    font-size: 2em;
+}
+
+.text-container p {
+    padding: 10px;
+    font-size: 1em;
+}
+
+
+.support-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.support-section img {
+    width: 50%;
+    height: auto;
+}
+
+.donate-container {
+    width: 50%;
+    background-color: #dadada;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-container h1 {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.donate-container p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer-content h1 {
+    color: #dadada;
+    padding-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer-links {
+    text-align: center;
+    padding: 50px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #dadada;
+    font-size: large;
+    transition: color 0.5s;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #89CFF0;
+}
+
+
+@media (max-width: 767px) {
+    .content-wrapper h1 {
+        font-size: 5vb;
+    }
+
+    .nav-section {
+        display: flex;
+        background-color: #dadada;
+        flex-direction: column;
+    }
+
+    .nav-tags a {
+        font-size: small;
+    }
+
+    .service-section {
+        flex-direction: column;
+    }
+
+    .support-section {
+
+        flex-direction: column;
+    }
+
+    .support-section img {
+        width: auto;
+        height: 50%;
+    }
+
+    .donate-container {
+        width: auto;
+        height: 50%;
+        padding: 10px;
+    }
+
+    .donate-container h1 {
+        font-size: 40px;
+    }
+
+    .donate-container p {
+        font-size: 10px;
+    }
+
+    .footer-content h1 {
+        font-size: 10px;
+    }
+
+    .footer-links a {
+        font-size: xx-small;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-wrapper h1 {
+        font-size: 5vb;
+    }
+
+    .nav-section {
+        display: flex;
+        background-color: #dadada;
+        flex-direction: column;
+    }
+
+    .nav-tags a {
+        font-size: xx-small;
+    }
+
+    .service-section {
+        flex-direction: column;
+    }
+
+    .support-section {
+
+        flex-direction: column;
+    }
+
+    .support-section img {
+        width: auto;
+        height: 50%;
+    }
+
+    .donate-container {
+        width: auto;
+        height: 50%;
+        padding: 10px;
+    }
+
+    .donate-container h1 {
+        font-size: 40px;
+    }
+
+    .donate-container p {
+        font-size: 10px;
+    }
+
+    .footer-content h1 {
+        font-size: 10px;
+    }
+
+    .footer-links a {
+        font-size: xx-small;
+    }
+}
